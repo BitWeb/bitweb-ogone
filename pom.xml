@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>ee.bitweb.ogone</groupId>
+    <groupId>com.github.bitweb.ogone</groupId>
     <artifactId>bitweb-ogone</artifactId>
     <packaging>jar</packaging>
     <version>0.1-SNAPSHOT</version>
     <name>Ogone library</name>
     <description>Ogone library for Java-based projects. Code is adapted from Ogone PHP library located at https://github.com/marlon-be/marlon-ogone</description>
-    <url>http://www.bitweb.ee</url>
+    <url>https://github.com/BitWeb</url>
     <scm>
         <url>https://github.com/BitWeb/bitweb-ogone</url>
     </scm>
