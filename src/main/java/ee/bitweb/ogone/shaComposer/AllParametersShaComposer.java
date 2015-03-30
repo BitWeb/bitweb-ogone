@@ -49,7 +49,7 @@ public class AllParametersShaComposer implements ShaComposer {
         String shaString = "";
         for (Map.Entry<String, Object> entry : parameters.entrySet()) {
             if (entry.getValue() == null || entry.getValue() == "") {
-                break;
+                continue;
             }
             shaString += entry.getKey() + "=" + entry.getValue().toString() + passphrase.toString();
         }
