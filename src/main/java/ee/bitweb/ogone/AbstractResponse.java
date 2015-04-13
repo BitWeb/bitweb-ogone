@@ -27,20 +27,12 @@ public abstract class AbstractResponse implements Response {
 
     protected Map<String, Object> parameters;
 
-    public AbstractResponse() {
-    }
-
     public AbstractResponse(String xmlString) throws XmlParseException {
         parameters = getResponseParameters(xmlString);
     }
 
     public Object getParameter(String key) {
         return parameters.get(key);
-    }
-
-    protected Map<String, Object> filterRequestParameters(Map<String, Object> requestParameters) {
-        requestParameters.keySet().retainAll(new ArrayList<String>(ogoneFields));
-        return requestParameters;
     }
 
     public String toString() {

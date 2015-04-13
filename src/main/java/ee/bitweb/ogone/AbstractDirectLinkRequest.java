@@ -31,10 +31,6 @@ public abstract class AbstractDirectLinkRequest extends AbstractPaymentRequest {
         return (String) parameters.get("payid");
     }
 
-    public void setOrderId(String orderId) {
-        setParameter("orderid", orderId);
-    }
-
     protected ArrayList<List<String>> getRequiredFieldGroups() {
         ArrayList<List<String>> fieldGroups = new ArrayList<List<String>>();
         fieldGroups.add(Arrays.asList("payid", "orderid"));

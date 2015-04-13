@@ -97,7 +97,7 @@ public abstract class AbstractPaymentRequest extends AbstractRequest {
         if (amount <= 0) {
             throw new IllegalArgumentException("Amount must be a positive number");
         }
-        if (amount >= 1.0e15) {
+        if (amount >= 2147483647) {
             throw new IllegalArgumentException("Amount is too high");
         }
         setParameter("amount", amount);

@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class HashAlgorithm {
 
-    public static final String HASH_SHA1    = "sha1";
-    public static final String HASH_SHA256  = "sha256";
-    public static final String HASH_SHA512  = "sha512";
+    public static final String HASH_SHA1    = "SHA-1";
+    public static final String HASH_SHA256  = "SHA-256";
+    public static final String HASH_SHA512  = "SHA-512";
     public String[] allowedAlgorithms = {HASH_SHA1, HASH_SHA256, HASH_SHA512};
 
     private String algorithm;
