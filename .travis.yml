@@ -1,6 +1,11 @@
 language: java
 jdk:
-  - oraclejdk7
+- oraclejdk7
 after_success:
-  - echo "<settings><servers><server><id>ossrh</id><username>\${env.OSSRH_USER}</username><password>\${env.OSSRH_PASS}</password></server></servers></settings>" > ~/settings.xml
-  - mvn deploy --settings ~/settings.xml
+- echo "<settings><servers><server><id>ossrh</id><username>\${env.OSSRH_USER}</username><password>\${env.OSSRH_PASS}</password></server></servers></settings>"
+  > ~/settings.xml
+- mvn deploy --settings ~/settings.xml
+env:
+  global:
+  - secure: jo0iJQVOnkI3T4IKQmWBqT++1ZoP2Foa4ploobfY1aDwhXiIItjGXFmAEWqD96l4CZaaARW2cylYoiui1ayiNDg/oiY5Y/Zai8q5ssEC8pD7AJHxfgLMuAtMeoxshtdUWttMrHvjSN2mEoZBl9wnLeL47TggzLTR0vpULXIaHjA=
+  - secure: seFSLmGgV9v1pUcdlubXjLaOk029ub4vGmwpda66OX6Fj16kbQkaFgPFqM7LtT9RFvQFCrEHek5Tr3ZROkJQjKu5fHkX9zY0RrS0g5dFMcmTVs/xeqa9bhpH3tcvoLjaVde7fi6vjLrqLi7GeYgqk0r0DkFrCAxibhdk3v8pG+M=
