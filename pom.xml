@@ -6,7 +6,7 @@
     <groupId>ee.bitweb</groupId>
     <artifactId>bitweb-ogone</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>Ogone library</name>
     <description>Ogone library for Java-based projects. Code is adapted from Ogone PHP library located at https://github.com/marlon-be/marlon-ogone</description>
     <url>http://www.bitweb.ee</url>
