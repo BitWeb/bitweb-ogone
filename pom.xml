@@ -10,6 +10,19 @@
     <name>Ogone library</name>
     <description>Ogone library for Java-based projects. Code is adapted from Ogone PHP library located at https://github.com/marlon-be/marlon-ogone</description>
     <url>http://www.bitweb.ee</url>
+    <developers>
+        <developer>
+            <name>Taivo Teder</name>
+            <email>taivo@bitweb.ee</email>
+            <organization>BitWeb</organization>
+            <organizationUrl>http://www.bitweb.ee</organizationUrl>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <url>https://github.com/BitWeb/bitweb-ogone/blob/master/LICENSE.md</url>
+        </license>
+    </licenses>
     <scm>
         <url>https://github.com/BitWeb/bitweb-ogone</url>
     </scm>
@@ -59,7 +72,33 @@
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
             </plugin>
-           <!-- <plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.5</version>
@@ -72,7 +111,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin> -->
+            </plugin>
         </plugins>
     </build>
     <profiles>
